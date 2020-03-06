@@ -20,5 +20,7 @@ for (let i = 0; i < data.length; i++) {
     if (users == data[i].lastName) {
         console.log('User name:', data[i].firstName + data[i].lastName);
         console.log('User age:', data[i].age)
-    } 
+    } else {
+        console.log('No results found for your request');
+    }
 };
