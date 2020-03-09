@@ -3,9 +3,9 @@
 let str = prompt('Введите слово')
 function checkPalindrom(str) {
     if (str == str.split('').reverse().join('')) {
-        console.log('Это полиндром');
+        console.log('Это палиндром');
     } else {
-        console.log('Это не полиндром');
+        console.log('Это не палиндром');
     }
 }
 checkPalindrom(str);
