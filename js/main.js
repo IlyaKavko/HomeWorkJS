@@ -1,26 +1,27 @@
 let data = [
         {
-        firstName: 'Ashton ',
+        firstName: 'Ashton',
         lastName: 'Kutcher',
         age: 40
     }, {
-        firstName: 'Bradley ',
+        firstName: 'Bradley',
         lastName: 'Pitt',
         age: 54
     }, {
-        firstName: 'Hanna ',
+        firstName: 'Hanna',
         lastName: 'Dakota',
         age: 24
     }
 ];
 
 let users = prompt ('Enter last name');
+let result = 'No results found for your request';
 
 for (let i = 0; i < data.length; i++) {
-    if (users == data[i].lastName) {
-        console.log('User name:', data[i].firstName + data[i].lastName);
-        console.log('User age:', data[i].age)
-    } else {
-        console.log('No results found for your request');
-    }
+    if (users.toUpperCase() == data[i].lastName.toUpperCase()) {
+        result = `User name: ${data[i].firstName} ${data[i].lastName} 
+User age: ${data[i].age}`;
+    } 
 };
+
+console.log(result);
