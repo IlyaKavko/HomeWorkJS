@@ -39,14 +39,13 @@ function getRandom() {
 
 function getZero(arr) {
     for (let i = 0; i < arr.length; i++) {
-      arr[i] = String(arr[i]);
-      arr[i] = arr[i].split('');
-      for (let j = 0; j < arr[i].length; j++) {
-          if(arr[i][j] === '0') {
-              arr[i][j] = 'zero';
+      let arrNumber = arr[i].toString().split('');
+      for (let j = 0; j < arrNumber.length; j++) {
+          if(arrNumber[j] === '0') {
+              arrNumber.splice(j, 1, 'zero');
+              arr.splice(i, 1, arrNumber.join(''));
           }
       }
-      arr[i] = arr[i].join('');
     }
     return arr;
 }
