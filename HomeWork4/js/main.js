@@ -30,10 +30,14 @@ table.classList.add("borderTable");
 
 let cells = table.getElementsByTagName("td");
 
-for (let i = 0; i < data.length; i++) {
-  for (let j = 0; j < table.rows.length; j++) {
-    table.rows[0].cells[1].innerHTML = data[0].firstName;
-    table.rows[1].cells[1].innerHTML = data[0].lastName;
-    table.rows[2].cells[1].innerHTML = data[0].age;
-  }
+let arr = 0
+
+for (let i = 0; i < 3; i++) {
+
+    table.rows[arr].cells[1].innerHTML = data[i].firstName;
+    arr++;
+    table.rows[arr].cells[1].innerHTML = data[i].lastName;
+    arr++;
+    table.rows[arr].cells[1].innerHTML = data[i].age;
+    arr++;
 }
