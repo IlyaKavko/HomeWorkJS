@@ -15,5 +15,4 @@ let calculater = {
   console.log(calculater.sum());
   console.log(calculater.min());
 
-  ad
   
