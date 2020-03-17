@@ -14,4 +14,6 @@ let calculater = {
   calculater.getNamber();
   console.log(calculater.sum());
   console.log(calculater.min());
+
+  ad
   
