@@ -41,3 +41,10 @@ for (let i = 0; i < 3; i++) {
     table.rows[arr].cells[1].innerHTML = data[i].age;
     arr++;
 }
+
+//Превое задание
+
+for (let j = 0; j < table.rows.length; j++) {
+  let rows = table.rows[j];
+  rows.cells[1].classList.add('tomato');
+}
