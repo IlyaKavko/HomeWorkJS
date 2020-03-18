@@ -27,8 +27,6 @@ let table = document.body.querySelector("table");
 
 table.classList.add("borderTable");
 
-let cells = table.getElementsByTagName("td");
-
 let arr = 0
 
 for (let i = 0; i < data.length; i++) {
