@@ -1,5 +1,4 @@
-let data = [
-  {
+let data = [{
     firstName: "Ashton",
 
     lastName: "Kutcher",
@@ -34,12 +33,12 @@ let arr = 0
 
 for (let i = 0; i < data.length; i++) {
 
-    table.rows[arr].cells[1].innerHTML = data[i].firstName;
-    arr++;
-    table.rows[arr].cells[1].innerHTML = data[i].lastName;
-    arr++;
-    table.rows[arr].cells[1].innerHTML = data[i].age;
-    arr++;
+  table.rows[arr].cells[1].innerHTML = data[i].firstName;
+  arr++;
+  table.rows[arr].cells[1].innerHTML = data[i].lastName;
+  arr++;
+  table.rows[arr].cells[1].innerHTML = data[i].age;
+  arr++;
 }
 
 //Превое задание
