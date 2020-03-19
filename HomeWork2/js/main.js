@@ -53,3 +53,5 @@ function getZero(arr) {
 let zeroArr = getRandom();
 console.log(zeroArr);
 console.log(getZero(zeroArr));
+
+let arr = 0; 
