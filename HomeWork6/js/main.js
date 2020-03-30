@@ -20,7 +20,7 @@ let table;
 const newData = [];
 let addBtn = document.querySelector('.add');
 let removeBtn = document.querySelector('.remove');
-let emite = document.querySelector('.emite')
+let edit = document.querySelector('.edit')
 for (let i = 0; i < data.length; i++) {
     newData.push(Object.values(data[i]));
 }
@@ -91,7 +91,7 @@ removeBtn.addEventListener('click', (e) => {
     fillTable(newData);
 });
 
-emite.addEventListener('click', (e) => {
+edit.addEventListener('click', (e) => {
     e.preventDefault();
 
     let userName = prompt('Vvedite user name');
@@ -112,7 +112,7 @@ emite.addEventListener('click', (e) => {
             newData.splice([i], 1, newUsers);
         }
     }
-    
+
     removeTable();
     createTable();
     fillTable(newData);

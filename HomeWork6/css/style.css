@@ -2,6 +2,7 @@ table {
     border-collapse: collapse;
     margin-bottom: 40px;
 }
+
 td {
     border: 1px solid black;
     padding: 5px;
@@ -19,7 +20,7 @@ td {
     padding: 5px 10px;
 }
 
-.emite {
+.edit {
     text-decoration: none;
     border: 1px solid #000000;
     padding: 5px 10px;
