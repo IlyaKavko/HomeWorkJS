@@ -34,6 +34,7 @@ table td {
     padding: 40px 20px;
     position: absolute;
     display: flex;
+    border-radius: 5px;
 }
 
 .left_col {
@@ -45,4 +46,5 @@ table td {
     position: absolute;
     top: 6px;
     cursor: pointer;
+    font-size: 21px;
 }
