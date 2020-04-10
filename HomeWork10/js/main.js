@@ -72,7 +72,6 @@ async function showModal(e) {
 async function getPeople() {
   let usersResponse = await fetch("https://swapi.co/api/people/");
   let users = (await usersResponse.json()).results;
-  console.log(users);
   return users;
 }
 async function getPlanet(url) {
