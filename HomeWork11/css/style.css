@@ -1,5 +1,4 @@
 .custom_slider .outer_container {
-  width: 300px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -8,12 +7,9 @@
   display: flex;
 }
 .custom_slider .one_slide {
-  width: 300px;
-  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
 }
 .custom_slider .one_slide img {
   width: 100%;
